@@ -14,7 +14,7 @@ class SubNetwork(ManagedObject):
                                )
 
         # Set the values
-        for k, v in kwargs:
+        for k, v in kwargs.items():
             self.set_parameter_value(k, v)
 
         self.children_types = ['SubNetwork']
@@ -30,7 +30,7 @@ class SubNetwork2(ManagedObject):
                                )
 
         # Set the values
-        for k, v in kwargs:
+        for k, v in kwargs.items():
             self.set_parameter_value(k, v)
 
         self.children_types = ['UtranCell']
@@ -46,5 +46,5 @@ class UtranCell(ManagedObject):
                                )
 
         # Set the values
-        for k, v in kwargs:
+        for k, v in kwargs.items():
             self.set_parameter_value(k, v)
