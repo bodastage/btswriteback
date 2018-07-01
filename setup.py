@@ -1,9 +1,9 @@
 import setuptools
 
 setuptools.setup(
-    name="btscenetworkwriteback",
+    name="btswriteback",
     version="0.0.1",
-    url="https://github.com/erssebaggala/writeback",
+    url="https://github.com/erssebaggala/btswriteback",
     author="Emmanuel Robert Ssebaggala",
     author_email="emmanuel.ssebaggala@bodastage.com",
     description="Telecom network write back package .",

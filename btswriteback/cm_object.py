@@ -52,12 +52,26 @@ class Parameter(object):
         return "Name:{}, value:{}".format(self.name, self.value)
 
 
+class BulkCMExtras(object):
+    """
+    Additional parameters to add to Bulk CM Iirt
+    """
+    def ___init__(self):
+        self.ns_prefix = None
+        self.is_vendor_specific = None
+        self.modifier = None
+
+
 class ManagedObject(object):
 
     def __init__(self, name, **kwargs):
         self.name = name
         self.parameters = {}
         self.parent = None
+        self.is_vendor_specific = False
+
+        # modifier=create|update
+        self.modifier = 'update'
 
         # What managed_object types can be children. This is used for
         # validation
